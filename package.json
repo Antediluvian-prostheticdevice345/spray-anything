@@ -1,0 +1,16 @@
+{
+  "name": "spray-anything",
+  "version": "1.0.0",
+  "description": "Programmatic spray paint effect — no Photoshop required",
+  "type": "module",
+  "scripts": {
+    "spray": "node spray_anything.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
