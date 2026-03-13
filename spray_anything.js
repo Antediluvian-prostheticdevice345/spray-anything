@@ -765,8 +765,8 @@ const args = process.argv.slice(2);
 const debugFlag = args.includes("--debug");
 const positional = args.filter((a) => !a.startsWith("--"));
 
-const inputFile = positional[0] || "wes.png";
-const outputFile = positional[1] || "wes_sprayed.png";
+const inputFile = positional[0] || "example/syntax-logo.png";
+const outputFile = positional[1] || "example/syntax-logo-sprayed.png";
 
 const inputPath = inputFile.startsWith("/") ? inputFile : join(__dirname, inputFile);
 const outputPath = outputFile.startsWith("/") ? outputFile : join(__dirname, outputFile);

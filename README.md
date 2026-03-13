@@ -4,7 +4,9 @@ Programmatic spray paint effect. A reverse-engineered recreation of the [Texture
 
 Available in both **Python** (OpenCV/NumPy) and **JavaScript** (Node.js/sharp).
 
-![Filmstrip showing each processing step](example_filmstrip.png)
+![Syntax logo with spray paint effect](example/syntax-logo-sprayed.png)
+
+![Filmstrip showing each processing step](example/syntax-logo-sprayed_filmstrip.png)
 
 ## What it does
 
@@ -22,8 +24,8 @@ Takes any image and makes it look spray-painted:
 
 ```bash
 npm install
-node spray_anything.mjs input.png output.png
-node spray_anything.mjs input.png output.png --debug  # saves each step + filmstrip
+node spray_anything.js input.png output.png
+node spray_anything.js input.png output.png --debug  # saves each step + filmstrip
 ```
 
 ### Python
@@ -50,10 +52,10 @@ Saves every intermediate step as a numbered PNG in `debug_steps/` and composites
 
 ## Files
 
-- `spray_anything.mjs` — JavaScript version (sharp + raw typed arrays)
+- `spray_anything.js` — JavaScript version (sharp + raw typed arrays)
 - `spray_anything.py` — Python version (OpenCV + NumPy)
 - `SprayMap_composite.png` — displacement map extracted from the original Texturelabs SprayMap.psd
-- `example.png` — sample input image for testing
+- `example/syntax-logo.png` — sample input image for testing
 
 ## License
 
